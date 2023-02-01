@@ -10,8 +10,9 @@ export default function FadeInSection(props) {
       );
     });
     observer.observe(domRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     return () => observer.unobserve(domRef.current);
-  }, []);
+  }, [isVisible]);
   return (
     <div
       className={`fade-in-section ${isVisible ? "is-visible" : ""}`}

@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {
     file: "EICHBAUM  et al - Opportunities and challenges in NS and SS partnerships in Covid-19 - AoGH 2021.pdf",
