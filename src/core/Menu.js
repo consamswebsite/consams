@@ -74,22 +74,22 @@ const Menu = withRouter(function () {
           ]}
         />
 
-        <Button
-          style={{
-            float: "left",
-            flexGrow: "1",
-            textTransform: "none",
-            minWidth: "10vw",
-            fontSize: "20px",
-          }}
+        <Link
+          to={"/memberships"}
+          style={{ textDecoration: "none", color: "black" }}
         >
-          <Link
-            to={"/memberships"}
-            style={{ textDecoration: "none", color: "black" }}
+          <Button
+            style={{
+              float: "left",
+              flexGrow: "1",
+              textTransform: "none",
+              minWidth: "10vw",
+              fontSize: "20px",
+            }}
           >
             Memberships
-          </Link>
-        </Button>
+          </Button>
+        </Link>
         <MenuDropdown
           title="Conferences"
           options={[
