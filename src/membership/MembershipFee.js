@@ -11,6 +11,7 @@ import Button from "@material-ui/core/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import memberships from "../content/memberships/memberships";
 import TopPhoto from "../core/TopPhoto";
+import donationlink from "../content/donationlink";
 
 const useStyles = makeStyles((theme) => ({
   leadership_container: {
@@ -76,6 +77,12 @@ const MembershipFee = withRouter(function () {
                       >
                         {membership.description}
                       </Typography>
+                      <a
+                        href={donationlink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none" }}
+                      >
                       <Button
                         variant="contained"
                         color="primary"
@@ -94,6 +101,7 @@ const MembershipFee = withRouter(function () {
                         />
                         <strong>Become A Member</strong>
                       </Button>
+                    </a>
                     </div>
                   </Grid>
                 ))}
